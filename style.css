@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Squada+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* flex to body as we have single div */
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9dc5c;
+}
+
+/* styling div container */
+
+div {
+  text-align: center;
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  padding-top: 25px;
+  color: rgb(32, 32, 32);
+  box-shadow: 8px 6px 5px 0px rgba(113, 133, 153, 0.45);
+  /* background: #011936; */
+  background-color: #f1faee;
+  border-radius: 3rem;
+}
+
+/* styling inputs */
+
+div input[type="number"] {
+  text-align: center;
+  margin: 7px;
+  padding: 8px;
+  width: 90%;
+  font-size: 1.1875rem;
+}
+
+div button {
+  margin: 0 3px;
+  width: 50px;
+  height: 35px;
+  background-color: #ed254e;
+  color: aliceblue;
+  border: grey;
+  border-radius: 0.1875rem;
+  cursor: pointer;
+}
+
+div button:hover {
+  background-color: #6d6fff;
+  cursor: pointer;
+}
+
+div input[type="number"]:read-only {
+  /* background-color: #465362; */
+  background: #011936;
+  color: aliceblue;
+  border-radius: 2px;
+  border: none;
+}
+
+/* disabling scroll */
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
